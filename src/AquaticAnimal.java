@@ -1,4 +1,6 @@
-public  class AquaticAnimal extends Animal {
+import java.util.Objects;
+
+public abstract class AquaticAnimal extends Animal {
     private String habitat;
     public AquaticAnimal() {
         super();
@@ -16,11 +18,21 @@ public  class AquaticAnimal extends Animal {
     public void setHabitat(String habitat) {
         this.habitat = habitat;
     }
-    public void swim() {
-        System.out.println("This aquatic animal is swimming.");
-    }
+    public abstract void swim() ;
     @Override
     public String toString() {
         return super.toString() + ", habitat=" + habitat;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof AquaticAnimal)) {
+            return false;
+        }
+        AquaticAnimal other = (AquaticAnimal) obj;
+        return super.equals(obj) &&
+                Objects.equals(habitat, other.habitat);
     }
 }

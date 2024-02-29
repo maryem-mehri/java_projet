@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class ZooManagement {
-    public static void main(String[] args)
-    {
+ public class ZooManagement {
+            public static void main(String[] args)
+            {
         /*int nbrCages = 20;
         String zooName = "myzoo";
         System.out.println(zooName+" comporte "+nbrCages+" cages.");*/
@@ -34,12 +34,9 @@ public class ZooManagement {
 
                 System.out.println(terrestrialAnimal);
 
-
-
-
-
                 dolphin.swim();
                 penguin.swim();
+
 
 
                 Animal dog = new Animal("Canine", "Snoopy", 2, true);
@@ -73,3 +70,4 @@ public class ZooManagement {
 
             }
         }
+

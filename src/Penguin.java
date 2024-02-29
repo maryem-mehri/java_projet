@@ -13,6 +13,12 @@
         public void setSwimmingDepth(float swimmingDepth) {
             this.swimmingDepth = swimmingDepth;
         }
+
+        @Override
+        public void swim() {
+
+        }
+
         @Override
         public String toString() {
             return super.toString() + ", swimmingDepth=" + swimmingDepth;
